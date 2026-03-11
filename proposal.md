@@ -58,7 +58,6 @@ My least favorite aspect of JavaScript is that objects and arrays are mutable an
 ### Version control*
 
 ### Contributions to stdlib*
-
 ## PRs
 ### BLAS Routines
 Adding JS implementations for **BLAS Level 2 Routines**
@@ -119,8 +118,20 @@ Adding JS implementations for **BLAS Level 2 Routines**
 # Project Description
 
 ### Goals*
+This project has been carried forward for the past two years, and several routines have already been implemented (many of them currently have open PRs). The remaining routines are in Level 2 and Level 3 and are mostly complex-valued.
+
+- As discussed with Athan, the top priority is to complete the implementation of real-valued routines. Since most real-valued routines already have JavaScript implementations, I will focus on implementing their corresponding C versions.
+
+- The second priority is complex-valued routines. I will implement both JavaScript and C implementations of those routines.
+
+Fortran and WebAssembly implementations are currently a lower priority. The Fortran implementations are blocked, and the WebAssembly API is relatively complex for general users.
 
 ### Why this project?*
+I started contributing in stdlib with good first issues. While exploring the repository I noticed this project listed among the pinned issues. I wanted to step out of my comfort zone and take on something relatively more challenging and important for the organization.
+Initially, I was not very familiar with BLAS, but as I stareted exploring the issue and reading more about it, I realised its importance. From machine learning algorithms to high performance computing, BLAS plays a fundamental role in many numerical and scientific applications, which fascinated me.
+
+This project provides a great opportunity for me to contribute meaningfully, as it aligns well with my interests and skills. The fact that it has been rigorously worked upon for the past two years makes me more sincere about my contribution to the community. I hope to carry forward the same level of dedication shown by contributors in previous years and help advance the project.
+Being a science student, working with matrices and vectors felt natural to me. Earlier, these concepts were mostly limited to textbooks, but working with them in real implementations has been an immensely valuable learning experience.
 
 ### Qualifications*
 
