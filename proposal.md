@@ -58,60 +58,57 @@ My least favorite aspect of JavaScript is that objects and arrays are mutable an
 ### Version control*
 
 ### Contributions to stdlib*
+[Open PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Aopen%20is%3Apr%20author%3A%40me)
+
+[Merged PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Amerged%20is%3Apr%20author%3A%40me)
+
 ## PRs
 ### BLAS Routines
 Adding JS implementations for **BLAS Level 2 Routines**
 
-[feat: add `blas/base/cgbmv` #10492](https://github.com/stdlib-js/stdlib/pull/10492) (open)
+- [feat: add `blas/base/cgbmv` #10492](https://github.com/stdlib-js/stdlib/pull/10492) (open)
+	- Added JS implementations of `cgbmv`.
+	- Implemented band matrix packing aligening with MKL storage format, which was missing in open PRs of `sgbmv` and `dgbmv`.
 
-- Added JS implementations of `cgbmv`.
-- Implemented band matrix packing aligening with MKL storage format, which was missing in open PRs of `sgbmv` and `dgbmv`.
-
-[feat: add `blas/base/cgemv` #10485](https://github.com/stdlib-js/stdlib/pull/10485) (open)
-
-- Added JS implementations `cgemv`.
-- Added tests for the conjugate transpose, which was missing in other open PRs of complex valued routines.
+- [feat: add `blas/base/cgemv` #10485](https://github.com/stdlib-js/stdlib/pull/10485) (open)
+	- Added JS implementations `cgemv`.
+	- Added tests for the conjugate transpose, which was missing in other open PRs of complex valued routines.
 
 ### Use string interpolation in JavaScript benchmarks
-[bench: refactor to use string interpolation in array/base/take3d #9053](https://github.com/stdlib-js/stdlib/pull/9053) (merged)
-
-[bench: refactor to use string interpolation in array/base/take2d #9051](https://github.com/stdlib-js/stdlib/pull/9051) (merged)
-
-[bench: refactor to use string interpolation in array/base/take-map #9050](https://github.com/stdlib-js/stdlib/pull/9050) (merged)
-
-[bench: refactor to use string interpolation in array/base/take-indexed2 #9049](https://github.com/stdlib-js/stdlib/pull/9049) (merged)
-
-[bench: refactor to use string interpolation in array/base/take-indexed #9048](https://github.com/stdlib-js/stdlib/pull/9048) (merged)
-
-[bench: refactor to use string interpolation in array/base/take #9026](https://github.com/stdlib-js/stdlib/pull/9026) (merged)
+- [bench: refactor to use string interpolation in array/base/take3d #9053](https://github.com/stdlib-js/stdlib/pull/9053) (merged)
+- [bench: refactor to use string interpolation in array/base/take2d #9051](https://github.com/stdlib-js/stdlib/pull/9051) (merged)
+- [bench: refactor to use string interpolation in array/base/take-map #9050](https://github.com/stdlib-js/stdlib/pull/9050) (merged)
+- [bench: refactor to use string interpolation in array/base/take-indexed2 #9049](https://github.com/stdlib-js/stdlib/pull/9049) (merged)
+- [bench: refactor to use string interpolation in array/base/take-indexed #9048](https://github.com/stdlib-js/stdlib/pull/9048) (merged)
+- [bench: refactor to use string interpolation in array/base/take #9026](https://github.com/stdlib-js/stdlib/pull/9026) (merged)
 
 ### Fix JavaScript lint errors
-
-[chore: fix JavaScript lint errors (issue #9544) #9546](https://github.com/stdlib-js/stdlib/pull/9546) (merged)
-
-[chore: fix EditorConfig lint errors #9409](https://github.com/stdlib-js/stdlib/pull/9409) (merged)
-
-[chore: fix JavaScript lint errors (issue #9334) #9337](https://github.com/stdlib-js/stdlib/pull/9337) (merged)
+- [chore: fix JavaScript lint errors (issue #9544) #9546](https://github.com/stdlib-js/stdlib/pull/9546) (merged)
+- [chore: fix EditorConfig lint errors #9409](https://github.com/stdlib-js/stdlib/pull/9409) (merged)
+- [chore: fix JavaScript lint errors (issue #9334) #9337](https://github.com/stdlib-js/stdlib/pull/9337) (merged)
 
 ### Address commit comments for commit
-
-[chore: address commit comments for commit 9799f77 (issue #9288) #9294](https://github.com/stdlib-js/stdlib/pull/9294) (merged)
-
-[chore: address commit comments for commit 540a83e (issue #9236) #9242](https://github.com/stdlib-js/stdlib/pull/9242) (merged)
-
-[chore: address commit comments for commit 8a20a3e (issue #9235) #9241](https://github.com/stdlib-js/stdlib/pull/9241) (merged)
+- [chore: address commit comments for commit 9799f77 (issue #9288) #9294](https://github.com/stdlib-js/stdlib/pull/9294) (merged)
+- [chore: address commit comments for commit 540a83e (issue #9236) #9242](https://github.com/stdlib-js/stdlib/pull/9242) (merged)
+- [chore: address commit comments for commit 8a20a3e (issue #9235) #9241](https://github.com/stdlib-js/stdlib/pull/9241) (merged)
 
 ### Others
+- [fix(bench): resolve TypeScript declaration lint errors #9320](https://github.com/stdlib-js/stdlib/pull/9320) (open)
+- [docs: improve doctests for ndarray instances in ndarray/any #9345](https://github.com/stdlib-js/stdlib/pull/9345) (merged)
 
-[fix(bench): resolve TypeScript declaration lint errors #9320](https://github.com/stdlib-js/stdlib/pull/9320) (open)
+## Code Reviews
+- [Row-major band matrix packing inconsistency in `dgbmv`](https://github.com/stdlib-js/stdlib/pull/6121#discussion_r2918859963)
+- [Row-major band matrix packing inconsistency in `sgbmv`](https://github.com/stdlib-js/stdlib/pull/5928#discussion_r2925124089)
+- [Column-major band matrix packing inconsistency in `sgbmv`](https://github.com/stdlib-js/stdlib/pull/5928#discussion_r2925149237)
 
-[docs: improve doctests for ndarray instances in ndarray/any #9345](https://github.com/stdlib-js/stdlib/pull/9345) (merged)
-
-## Discussions
-
-[Inconsistency in band matrix packing in `dgbmv`](https://github.com/stdlib-js/stdlib/pull/6121#discussion_r2918859963)
 
 ### stdlib showcase*
+I made **Linear Regression Visualizer** allowing users to generate data points, train a model and observe how the regression line converges over time along with the error across training epochs.
+
+This project uses `stdlib` numerical and BLAS utilities including `uniform`, `daxpy`, `ddot`, `dnrm2`, `pow` and `randu` which can be found in [`src/utils/sgdRegression.ts`](https://github.com/DivitJain26/Linear-Regression-Visualizer/blob/04c81ee92da3f7162a389737bfb5b031328cfbe3/src/utils/sgdRegression.ts)
+
+[[GitHub]](https://github.com/DivitJain26/Linear-Regression-Visualizer.git)
+[[Live Demo]](https://divitjain26.github.io/Linear-Regression-Visualizer/)
 
 ---
 
