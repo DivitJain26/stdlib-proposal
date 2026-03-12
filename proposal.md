@@ -1,5 +1,5 @@
 # Add a title*
-[RFC]: Add BLAS bindings and implementations for linear algebra
+[RFC]: Add BLAS bindings and implementations for linear algebra (Draft)
 ---
 
 # Your Background
@@ -52,6 +52,7 @@ My least favorite aspect of JavaScript is that objects and arrays are mutable an
 ### Node.js experience*
 
 ### C/Fortran experience*
+I was introduced to c programming by my University, being called the mother of all languages it help me grap low level concept like memory management, types,
 
 ### Interest in stdlib*
 
@@ -101,7 +102,6 @@ Adding JS implementations for **BLAS Level 2 Routines**
 - [Row-major band matrix packing inconsistency in `sgbmv`](https://github.com/stdlib-js/stdlib/pull/5928#discussion_r2925124089)
 - [Column-major band matrix packing inconsistency in `sgbmv`](https://github.com/stdlib-js/stdlib/pull/5928#discussion_r2925149237)
 
-
 ### stdlib showcase*
 I made **Linear Regression Visualizer** allowing users to generate data points, train a model and observe how the regression line converges over time along with the error across training epochs.
 
@@ -128,9 +128,17 @@ I started contributing in stdlib with good first issues. While exploring the rep
 Initially, I was not very familiar with BLAS, but as I stareted exploring the issue and reading more about it, I realised its importance. From machine learning algorithms to high performance computing, BLAS plays a fundamental role in many numerical and scientific applications, which fascinated me.
 
 This project provides a great opportunity for me to contribute meaningfully, as it aligns well with my interests and skills. The fact that it has been rigorously worked upon for the past two years makes me more sincere about my contribution to the community. I hope to carry forward the same level of dedication shown by contributors in previous years and help advance the project.
-Being a science student, working with matrices and vectors felt natural to me. Earlier, these concepts were mostly limited to textbooks, but working with them in real implementations has been an immensely valuable learning experience.
+Being a science student, working with matrices and vectors felt natural to me. Earlier, these concepts were limited to textbooks, but working close with them in real implementations has been an immensely valuable learning experience.
 
 ### Qualifications*
+I believe I am well prepared to contribute to and help lead this project, as I already have meaningful contributions in `blas/base/cgemv` and `blas/base/cgbmv` and along the way I have developed a deep understanding of the BLAS kernels, testing strategies, documentation, and common practices expected by `stdlib`. 
+
+While working on complex-valued BLAS Level 2 routines, I gained exposure to related routines, including real-valued routines and the broader structure of Level 3 operations. 
+I find it worth mentioning that in the process of studying band matrix routines I noticed that some open PRs from the previous year’s GSOC had some inconsistency in packing band matrices compared to BLAS MKL, and I improved it in my implementation to ensure it aligns with the official documentation.
+
+My academic background supports this project as well. I have qualified a nationwide examination called [Design and Analysis of Algorithms by NPTEL](https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs90/Course/NPTEL25CS90S34540007909204048.pdf) through which I have developed a strong foundation of core algorithms and data structures, and it aids me to analyse complexity of an algorithm and come up with optimization techniques.
+
+In addition, I regularly practice data structures and algorithms on [LeetCode](https://leetcode.com/u/Divit_Jain/), which further strengthens my problem-solving skills and algorithmic thinking.
 
 ### Prior art*
 
@@ -168,3 +176,4 @@ Assuming a 12 week schedule,
 - **Final Week**:
 
 ### Related issues
+[[RFC]: Add BLAS bindings and implementations for linear algebra (tracking issue) #2039](https://github.com/stdlib-js/stdlib/issues/2039)
