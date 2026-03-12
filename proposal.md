@@ -34,7 +34,7 @@ email:divit26@gmail.com,github:[DivitJain26](https://github.com/DivitJain26)
 Linux
 
 ### Editor*
-Visual Studio Code (VSCode), I like due it its simplicity and and basically it full fill my requiremnets, aslo it supperts wsl 
+My preferred code editor is Visual Studio Code (VSCode). I like it for its simplicity, and it fulfills all my development requirements. Also provides good integration with WSL, which allows me to work easily in a Linux environment while developing on Windows.
 
 ### Programming experience*
 
@@ -52,11 +52,15 @@ My least favorite aspect of JavaScript is that objects and arrays are mutable an
 ### Node.js experience*
 
 ### C/Fortran experience*
-I was introduced to c programming by my University, being called the mother of all languages it help me grap low level concept like memory management, types,
+I was introduced to C programming by my University in my first year, being called the mother of all languages. It helped me grasp low level concepts like memory management, types and how programs interact with system resources.
+Later, I learned C++, where I became familiar with object-oriented programming concepts.
+
+I do not currently have experience with Fortran, but I am open to learning it if needed while working on the project.
 
 ### Interest in stdlib*
 
 ### Version control*
+Yes
 
 ### Contributions to stdlib*
 [Open PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Aopen%20is%3Apr%20author%3A%40me)
