@@ -41,7 +41,7 @@ My preferred code editor is Visual Studio Code (VSCode). I like it for its simpl
 ### JavaScript experience*
 JavaScript was my first programming language. I started my journey with web development, and learning JavaScript helped me understand the logic behind the applications.
 
-I primarily use JavaScript for building backend systems and API endpoints. I picked up Node.js and Express.js for this, which changed how I looked at JavaScript. Through them, I learned about request handling, REST APIs, and asynchronous programming using async/await.
+I primarily use JavaScript for building backend systems and API endpoints. I started using Node.js and Express.js for this project, and it completely shifted my perspective on JavaScript. Through them, I learned about request handling, REST APIs, and asynchronous programming using async/await.
 
 My favorite feature of JavaScript is its flexibility and portability. I compiled my first JavaScript code in the browser, and it fascinates me how the language started as a tool for adding simple animations to web pages and has evolved into a powerful platform. With runtimes like Node.js and Bun, and with TypeScript providing strong typing, JavaScript has become a popular choice for building backend systems.
 
@@ -145,6 +145,12 @@ My academic background supports this project as well. I have qualified a nationw
 In addition, I regularly practice data structures and algorithms on [LeetCode](https://leetcode.com/u/Divit_Jain/), which further strengthens my problem-solving skills and algorithmic thinking.
 
 ### Prior art*
+The earliest implementation of BLAS can be traced back to 1979, [LINPACK](https://en.wikipedia.org/wiki/LINPACK) and [EISPACK](https://en.wikipedia.org/wiki/EISPACK) were the earliest numerical libraries to provide Fortran based BLAS functionality. Later, [LAPACK](https://www.netlib.org/lapack/explore-html/) became widely adopted due to its better support for modern hardware architectures.
+Over time, the focus of numerical computing shifted toward performance optimization. Libraries such as [Intel one API Math Kernel Library (oneMKL)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html), [OpenBLAS](https://github.com/OpenMathLib/OpenBLAS), and [cuBLAS](https://developer.nvidia.com/cublas) emerged to provide highly optimized BLAS implementations for different hardware platforms. Personally for me [Intel one API Math Kernel Library (oneMKL)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html) and [LAPACK](https://www.netlib.org/lapack/explore-html/) has been my Bible for BLAS, I have frequently used them as guides for routine definitions, input parameters, and expected results for my contributions till now.
+
+Python libraries like [NumPy](https://numpy.org/devdocs/building/blas_lapack.html) and [SciPy](https://docs.scipy.org/doc/scipy/reference/linalg.blas.html) provide BLAS wrappers which use foundational libraries like LAPACK and OpenBLAS under the hood.
+
+Within `stdlib` this project has been carried forward by [Aman Bhansali](https://github.com/aman-095) and [Shabareesh Shetty](https://github.com/ShabiShett07), their contributions have been an immense help for me to deepen my understanding of this project and to contribute to it meaningfully.
 
 ### Commitment*
 
