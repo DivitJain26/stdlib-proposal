@@ -77,7 +77,14 @@ Later, I learned C++, where I became familiar with object-oriented programming c
 I do not currently have experience with Fortran, but I understand it for the purposes of this project, I am also open to learning it more as needed while working on the project.
 
 ### Interest in stdlib*
+One can be quick to question the need for a JavaScript numerical library when Python libraries have already dominated the scientific computing space, but that comparison misses the point entirely. Unlike Python libraries, `stdlib` brings that same computational power closer to the client machine. Calculations can be performed natively in the browser, no server, no API calls, no runtime required!.
 
+What is truly commendable is how rigorous and consistent `stdlib` is throughout its entire codebase. Every package follows the same disciplined structure, implementation, tests, benchmarks, and documentation.
+
+One of my favorite features in `stdlib` is the `Complex64Array`, as JavaScript natively doesn't have support for complex numbers so other JavaScript based libraries provide plain objects but `stdlib` instead provides a typed, memory-efficient, data structure storing real and imaginary components as interleaved `float32` pairs in contiguous memory. It comes with so many features such as `float32` precision, `.get()`, `.set()`, stride based access.
+
+I am looking forward to a future where `stdlib` becomes the foundation for machine learning in JavaScript.
+ 
 ### Version control*
 Yes
 
@@ -172,6 +179,14 @@ Python libraries like [NumPy](https://numpy.org/devdocs/building/blas_lapack.htm
 Within `stdlib` this project has been carried forward by [Aman Bhansali](https://github.com/aman-095) and [Shabareesh Shetty](https://github.com/ShabiShett07), their contributions have been an immense help for me to deepen my understanding of this project and to contribute to it meaningfully.
 
 ### Commitment*
+I will make this project my first priority, I am willing to dedicate 30 to 40 hours a week, committing to the large 350 hour engagement this project requires. 
+
+I am not currently committed to any other  full-time or part-time position, and I will be able to contribute consistently despite my academic responsibilities. I will also have a summer break of approximately one month, during which I can work extended hours to push significant progress on the project.
+
+I commit to implementing the majority of complex valued level 2 and level 3 BLAS routines, each accompanied by thorough testing, benchmarks, and documentation meeting stdlib's standards.
+I will also actively participate in reviewing open PRs from GSoC 2025 and PRs made this year by fellow contributors.
+
+I'll gladly continue working on the project even after the GSoC period, addressing review feedback, implementing remaining routines, and ensuring the work I deliver is of the highest quality this project deserves.
 
 ### Schedule*
 Assuming a 12 week schedule,
