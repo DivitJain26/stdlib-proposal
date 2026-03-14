@@ -37,6 +37,23 @@ Linux
 My preferred code editor is Visual Studio Code (VSCode). I like it for its simplicity, and it fulfills all my development requirements. Also provides good integration with WSL, which allows me to work easily in a Linux environment while developing on Windows.
 
 ### Programming experience*
+Pursuing computer science marked my programming journey. I started with the basics of HTML and CSS,  gradually moving into component-based UI development with React.js but that was just the surface.
+
+I wanted to know what triggers when you click a button,how the request travels and gets fulfilled, which drove me to explore backend development.
+I picked Node.js and Express.js where I dug into concepts like RESTful API, microservices architecture, and database management. I also have experience with C and C++ which taught me a lot about low level programming. 
+
+With the rapid rise of Artificial Intelligence, I expanded into Python and the mathematics behind Machine Learning, Currently  m interested in built application to target real world problem that can be solved with AI
+
+### Projects:
+- **VAK:** Demo of real time comment moderation for social meda, uses an SVM for toxic comment detection. Built with Next.js
+
+	[[GitHub]](https://github.com/DivitJain26/vak)
+	[[Live Demo]](Vak-eosin.vercel.app)
+
+- **Aluminate:** Alumni connection platform Full-stack app built on the MERN stack, enabling students and alumni to connect
+
+	[[GitHub]](https://github.com/DivitJain26/Aluminate.git)
+	[[Live Demo]](https://aluminate-syvf.onrender.com/)
 
 ### JavaScript experience*
 JavaScript was my first programming language. I started my journey with web development, and learning JavaScript helped me understand the logic behind the applications.
@@ -50,12 +67,14 @@ I also like how JavaScript’s syntax is relatively simple like Python, while st
 My least favorite aspect of JavaScript is that objects and arrays are mutable and passed by reference, which can sometimes lead to unexpected behavior if not handled carefully.
 
 ### Node.js experience*
+I began exploring backend development with Node.js in my first year, gaining knowledge about server architecture and web protocols needed for a scalable backend system.
+Using Express.js I have built RESTful APIs and implemented features like authentication systems, payment gateway integrations, and CRUD operations. 
 
 ### C/Fortran experience*
 I was introduced to C programming by my University in my first year, being called the mother of all languages. It helped me grasp low level concepts like memory management, types and how programs interact with system resources.
 Later, I learned C++, where I became familiar with object-oriented programming concepts.
 
-I do not currently have experience with Fortran, but I am open to learning it if needed while working on the project.
+I do not currently have experience with Fortran, but I understand it for the purposes of this project, I am also open to learning it more as needed while working on the project.
 
 ### Interest in stdlib*
 
@@ -67,10 +86,10 @@ Yes
 
 [Merged PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Amerged%20is%3Apr%20author%3A%40me)
 
+**These Includes**
+
 ## PRs
 ### BLAS Routines
-Adding JS implementations for **BLAS Level 2 Routines**
-
 - [feat: add `blas/base/cgbmv` #10492](https://github.com/stdlib-js/stdlib/pull/10492) (open)
 	- Added JS implementations of `cgbmv`.
 	- Implemented band matrix packing aligening with MKL storage format, which was missing in open PRs of `sgbmv` and `dgbmv`.
