@@ -42,7 +42,7 @@ email:divit26@gmail.com,github:[DivitJain26](https://github.com/DivitJain26)
 Linux
 
 ### Editor*
-My preferred code editor is Visual Studio Code (VSCode). I like it for its simplicity, and it fulfills all my development requirements. Also provides good integration with WSL, which allows me to work easily in a Linux environment while developing on Windows.
+My preferred code editor is Visual Studio Code (VSCode). I like it for its simplicity, and it fulfills all my development requirements. It also provides good integration with WSL, which allows me to work easily in a Linux environment while developing on Windows.
 
 ### Programming experience*
 Pursuing computer science marked my programming journey. I started with the basics of HTML and CSS,  gradually moving into component-based UI development with React.js but that was just the surface.
@@ -50,7 +50,7 @@ Pursuing computer science marked my programming journey. I started with the basi
 I wanted to know what triggers when you click a button,how the request travels and gets fulfilled, which drove me to explore backend development.
 I picked Node.js and Express.js where I dug into concepts like RESTful API, microservices architecture, and database management. I also have experience with C and C++ which taught me a lot about low level programming. 
 
-With the rapid rise of Artificial Intelligence, I expanded into Python and the mathematics behind Machine Learning, Currently  m interested in built application to target real world problem that can be solved with AI
+With the rapid rise of Artificial Intelligence, I expanded into Python and the mathematics behind Machine Learning, currently I am interested in built application to target real world problem that can be solved with AI.
 
 ### Projects:
 - **VAK:** Demo of real time comment moderation for social meda, uses an SVM for toxic comment detection. Built with Next.js
@@ -64,32 +64,32 @@ With the rapid rise of Artificial Intelligence, I expanded into Python and the m
 	[[Live Demo]](https://aluminate-syvf.onrender.com/)
 
 ### JavaScript experience*
-JavaScript was my first programming language. I started my journey with web development, and learning JavaScript helped me understand the logic behind the applications.
+`JavaScript` was my first programming language. I started my journey with web development, and learning `JavaScript` helped me understand the logic behind the applications.
 
-I primarily use JavaScript for building backend systems and API endpoints. I started using Node.js and Express.js for this project, and it completely shifted my perspective on JavaScript. Through them, I learned about request handling, REST APIs, and asynchronous programming using async/await.
+`JavaScript` is my primarily language for building backend systems and API endpoints using` Node.js` and `Express.js`, and it completely shifted my perspective on `JavaScript`. Gaining exposure to request handling, RESTful APIs, and asynchronous programming using async/await.
 
-My favorite feature of JavaScript is its flexibility and portability. I compiled my first JavaScript code in the browser, and it fascinates me how the language started as a tool for adding simple animations to web pages and has evolved into a powerful platform. With runtimes like Node.js and Bun, and with TypeScript providing strong typing, JavaScript has become a popular choice for building backend systems.
+My favorite feature of `JavaScript` is its flexibility and portability. I compiled my first `JavaScript` code in the browser, and it fascinates me how the language started as a tool for adding simple animations to web pages and has evolved into a powerful platform. With runtimes like `Node.js` and `Bun`, and with `TypeScript` providing strong typing, `JavaScript` has become a popular choice for building backend systems.
 
-I also like how JavaScript’s syntax is relatively simple like Python, while still having some strictness similar to Java or C++. It is not perfect, but with TypeScript the ecosystem becomes very robust.
+I also like how `JavaScript’s` syntax is relatively simple like Python, while still having some strictness similar to `Java` or `C++`. It is not perfect, but with `TypeScript` the ecosystem becomes very robust.
 
-My least favorite aspect of JavaScript is that objects and arrays are mutable and passed by reference, which can sometimes lead to unexpected behavior if not handled carefully.
+My least favorite aspect of `JavaScript` is that objects and arrays are mutable and passed by reference, which can sometimes lead to unexpected behavior if not handled carefully.
 
 ### Node.js experience*
-I began exploring backend development with Node.js in my first year, gaining knowledge about server architecture and web protocols needed for a scalable backend system.
-Using Express.js I have built RESTful APIs and implemented features like authentication systems, payment gateway integrations, and CRUD operations. 
+I began exploring backend development with `Node.js` in my first year, gaining knowledge about server architecture and web protocols needed for a scalable backend system.
+Using `Express.js` I have built RESTful APIs and implemented features like authentication systems, payment gateway integrations, and CRUD operations. 
 
 ### C/Fortran experience*
-I was introduced to C programming by my University in my first year, being called the mother of all languages. It helped me grasp low level concepts like memory management, types and how programs interact with system resources.
-Later, I learned C++, where I became familiar with object-oriented programming concepts.
+I was introduced to `C` programming by my University in my first year, being called the *Mother of All Programming languages*. It helped me grasp low level concepts like memory management, types and how programs interact with system resources.
+Later, I learned `C++`, familiarizing myself with object-oriented programming concepts.
 
-I do not currently have experience with Fortran, but I understand it for the purposes of this project, I am also open to learning it more as needed while working on the project.
+I currently do not have experience with `Fortran`, however my understanding of its concepts are sufficient for this project
 
 ### Interest in stdlib*
-One can be quick to question the need for a JavaScript numerical library when Python libraries have already dominated the scientific computing space, but that comparison misses the point entirely. Unlike Python libraries, `stdlib` brings that same computational power closer to the client machine. Calculations can be performed natively in the browser, no server, no API calls, no runtime required!.
+One can be quick to question the need for a `JavaScript` numerical library when Python libraries have already dominated the scientific computing space, but that comparison misses the point entirely. Unlike `Python` libraries, `stdlib` brings that same computational power closer to the client machine. Calculations can be performed natively in the browser, no server, no API calls, no runtime required!.
 
 What is truly commendable is how rigorous and consistent `stdlib` is throughout its entire codebase. Every package follows the same disciplined structure, implementation, tests, benchmarks, and documentation.
 
-One of my favorite features in `stdlib` is the `Complex64Array`, as JavaScript natively doesn't have support for complex numbers so other JavaScript based libraries provide plain objects but `stdlib` instead provides a typed, memory-efficient, data structure storing real and imaginary components as interleaved `float32` pairs in contiguous memory. It comes with so many features such as `float32` precision, `.get()`, `.set()`, stride based access.
+One of my favorite features in `stdlib` is the `Complex64Array`, as `JavaScript` natively does not have support for complex numbers so other `JavaScript` based libraries provide plain objects but `stdlib` instead provides a typed, memory-efficient, data structure storing real and imaginary components as interleaved `float32` pairs in contiguous memory. It comes with so many features such as `float32` precision, `.get()`, `.set()`, stride based access.
 
 I am looking forward to a future where `stdlib` becomes the foundation for machine learning in JavaScript.
  
@@ -97,9 +97,9 @@ I am looking forward to a future where `stdlib` becomes the foundation for machi
 Yes
 
 ### Contributions to stdlib*
-[Open PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Aopen%20is%3Apr%20author%3A%40me)
+[Open PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Aopen%20is%3Apr%20author%3ADivitJain26)
 
-[Merged PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Amerged%20is%3Apr%20author%3A%40me)
+[Merged PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Amerged%20is%3Apr%20author%3ADivitJain26)
 
 **These Includes**
 
@@ -155,21 +155,21 @@ This project uses `stdlib` numerical and BLAS utilities including `uniform`, `da
 ### Goals*
 This project has been carried forward for the past two years, and several routines have already been implemented (many of them currently have open PRs). The remaining routines are in Level 2 and Level 3 and are mostly complex-valued.
 
-- As discussed with Athan, the top priority is to complete the implementation of real-valued routines. Since most real-valued routines already have JavaScript implementations, I will focus on implementing their corresponding C versions.
+- As discussed with Athan, the top priority is to complete the implementation of real-valued routines. Since most real-valued routines already have `JavaScript` implementations, I will focus on implementing their corresponding `C` versions.
 
-- The second priority is complex-valued routines. I will implement both JavaScript and C implementations of those routines.
+- The second priority is complex-valued routines. I will implement both `JavaScript` and `C implementations of those routines.
 
-Fortran and WebAssembly implementations are currently a lower priority. The Fortran implementations are blocked, and the WebAssembly API is relatively complex for general users.
+`Fortran` and `WebAssembly` implementations are currently a lower priority. The `Fortran` implementations are blocked, and the `WebAssembly` API is relatively complex for general users.
 
 ### Why this project?*
-I started contributing in stdlib with good first issues. While exploring the repository I noticed this project listed among the pinned issues. I wanted to step out of my comfort zone and take on something relatively more challenging and important for the organization.
+I started contributing in 	 with good first issues. While exploring the repository I noticed this project listed among the pinned issues. I wanted to step out of my comfort zone and take on something relatively more challenging and important for the organization.
 Initially, I was not very familiar with BLAS, but as I stareted exploring the issue and reading more about it, I realised its importance. From machine learning algorithms to high performance computing, BLAS plays a fundamental role in many numerical and scientific applications, which fascinated me.
 
 This project provides a great opportunity for me to contribute meaningfully, as it aligns well with my interests and skills. The fact that it has been rigorously worked upon for the past two years makes me more sincere about my contribution to the community. I hope to carry forward the same level of dedication shown by contributors in previous years and help advance the project.
 Being a science student, working with matrices and vectors felt natural to me. Earlier, these concepts were limited to textbooks, but working close with them in real implementations has been an immensely valuable learning experience.
 
 ### Qualifications*
-I believe I am well prepared to contribute to and help lead this project, as I already have meaningful contributions in `blas/base/cgemv` and `blas/base/cgbmv` and along the way I have developed a deep understanding of the BLAS kernels, testing strategies, documentation, and common practices expected by `stdlib`. 
+I am well prepared to contribute to and help lead this project, as I already have meaningful contributions in `blas/base/cgemv` and `blas/base/cgbmv` and along the way I have developed a deep understanding of the BLAS kernels, testing strategies, documentation, and common practices expected by `stdlib`. 
 
 While working on complex-valued BLAS Level 2 routines, I gained exposure to related routines, including real-valued routines and the broader structure of Level 3 operations. 
 I find it worth mentioning that in the process of studying band matrix routines I noticed that some open PRs from the previous year’s GSOC had some inconsistency in packing band matrices compared to BLAS MKL, and I improved it in my implementation to ensure it aligns with the official documentation.
@@ -189,7 +189,7 @@ Within `stdlib` this project has been carried forward by [Aman Bhansali](https:/
 ### Commitment*
 I will make this project my first priority, I am willing to dedicate 30 to 40 hours a week, committing to the large 350 hour engagement this project requires. 
 
-I am not currently committed to any other  full-time or part-time position, and I will be able to contribute consistently despite my academic responsibilities. I will also have a summer break of approximately one month, during which I can work extended hours to push significant progress on the project.
+I am not currently committed to any other full-time or part-time position, and I will be able to contribute consistently despite my academic responsibilities. I will also have a summer break of approximately one month, during which I can work extended hours to push significant progress on the project.
 
 I commit to implementing the majority of complex valued level 2 and level 3 BLAS routines, each accompanied by thorough testing, benchmarks, and documentation meeting stdlib's standards.
 I will also actively participate in reviewing open PRs from GSoC 2025 and PRs made this year by fellow contributors.
