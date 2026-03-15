@@ -11,10 +11,10 @@ Divit Jain
 Yes
 
 ### University name
-MIT ADT University, Pune, India
+MIT-ADT University, Pune, India
 
 ### University program
-Bachelor of Technology in Computer Science and Engineering
+Bachelor's of Technology in Computer Science and Engineering
 
 ### Expected graduation
 2027
@@ -24,10 +24,9 @@ I am [Divit Jain](https://divit-jain.vercel.app/), a third year undergraduate st
 
 Previously I have interned as a backend developer at [uPivotal](https://drive.google.com/file/d/1vtgZD9Swp9V-1CucD7qNC_eY2oRv2xVk/view?usp=drive_link) as part of foreign university collaboration, where I developed an authentication system using cookies and JWT for a healthcare application.
 
-My technical skill set includes JavaScript, TypeScript, C/C++, Python, and Java. I am proficient in the MERN stack and Next.js for full-stack development, and experienced with Python ML libraries, and have exposure to DevOps including Docker, deployment and cloud infrastructure and services.
+My technical skill set includes `JavaScript`, `TypeScript`, `C`/`C++`, `Python`, and `Java`. I am proficient in the `MERN` stack and `Next.js` for full-stack development, and experienced with `Python` ML libraries, and have exposure to DevOps including `Docker`, deployment and cloud infrastructure and services.
 
 I am always excited to learn new technologies and challenge myself to build solutions that target real pain points.
-
 
 ### Timezone*
 Indian Standard Time ( IST ), UTC+5:30
@@ -45,20 +44,20 @@ Linux
 My preferred code editor is Visual Studio Code (VSCode). I like it for its simplicity, and it fulfills all my development requirements. It also provides good integration with WSL, which allows me to work easily in a Linux environment while developing on Windows.
 
 ### Programming experience*
-Pursuing computer science marked my programming journey. I started with the basics of HTML and CSS,  gradually moving into component-based UI development with React.js but that was just the surface.
+Pursuing computer science marked my programming journey. I started with the basics of `HTML` and `CSS`,  gradually moving into component-based UI development with `React.js` but that was just the surface.
 
 I wanted to know what triggers when you click a button,how the request travels and gets fulfilled, which drove me to explore backend development.
-I picked Node.js and Express.js where I dug into concepts like RESTful API, microservices architecture, and database management. I also have experience with C and C++ which taught me a lot about low level programming. 
+I picked `Node.js` and `Express.js` where I dug into concepts like RESTful API, microservices architecture, and database management. I also have experience with `C` and `C++` which taught me a lot about low level programming. 
 
-With the rapid rise of Artificial Intelligence, I expanded into Python and the mathematics behind Machine Learning, currently I am interested in built application to target real world problem that can be solved with AI.
+With the rapid rise of Artificial Intelligence, I expanded into `Python` and the mathematics behind Machine Learning, currently I am interested in built application to target real world problem that can be solved with AI.
 
 ### Projects:
-- **VAK:** Demo of real time comment moderation for social meda, uses an SVM for toxic comment detection. Built with Next.js
+- **VAK:** Demo of real time comment moderation for social meda, uses an SVM for toxic comment detection. Built with `Next.js`
 
 	[[GitHub]](https://github.com/DivitJain26/vak)
 	[[Live Demo]](Vak-eosin.vercel.app)
 
-- **Aluminate:** Alumni connection platform Full-stack app built on the MERN stack, enabling students and alumni to connect
+- **Aluminate:** Alumni connection platform Full-stack app built on the `MERN` stack, enabling students and alumni to connect
 
 	[[GitHub]](https://github.com/DivitJain26/Aluminate.git)
 	[[Live Demo]](https://aluminate-syvf.onrender.com/)
@@ -79,7 +78,7 @@ I began exploring backend development with `Node.js` in my first year, gaining k
 Using `Express.js` I have built RESTful APIs and implemented features like authentication systems, payment gateway integrations, and CRUD operations. 
 
 ### C/Fortran experience*
-I was introduced to `C` programming by my University in my first year, being called the *Mother of All Programming languages*. It helped me grasp low level concepts like memory management, types and how programs interact with system resources.
+I was introduced to `C` programming by my University in my first year, being called the *"Mother of All Programming Languages"*. It helped me grasp low level concepts like memory management, types and how programs interact with system resources.
 Later, I learned `C++`, familiarizing myself with object-oriented programming concepts.
 
 I currently do not have experience with `Fortran`, however my understanding of its concepts are sufficient for this project
@@ -89,9 +88,9 @@ One can be quick to question the need for a `JavaScript` numerical library when 
 
 What is truly commendable is how rigorous and consistent `stdlib` is throughout its entire codebase. Every package follows the same disciplined structure, implementation, tests, benchmarks, and documentation.
 
-One of my favorite features in `stdlib` is the `Complex64Array`, as `JavaScript` natively does not have support for complex numbers so other `JavaScript` based libraries provide plain objects but `stdlib` instead provides a typed, memory-efficient, data structure storing real and imaginary components as interleaved `float32` pairs in contiguous memory. It comes with so many features such as `float32` precision, `.get()`, `.set()`, stride based access.
+One of my favorite features in `stdlib` is the `Complex64Array`, as `JavaScript` natively does not have support for complex numbers so other `JavaScript` based libraries provide plain objects but `stdlib` instead provides a typed, memory-efficient data structure storing real and imaginary components as interleaved `float32` pairs in contiguous memory. It comes with many features such as `float32` precision, `.get()`, `.set()`, stride based access.
 
-I am looking forward to a future where `stdlib` becomes the foundation for machine learning in JavaScript.
+I am looking forward to a future where `stdlib` becomes the foundation for machine learning in `JavaScript`.
  
 ### Version control*
 Yes
@@ -162,7 +161,7 @@ This project has been carried forward for the past two years, and several routin
 `Fortran` and `WebAssembly` implementations are currently a lower priority. The `Fortran` implementations are blocked, and the `WebAssembly` API is relatively complex for general users.
 
 ### Why this project?*
-I started contributing in 	 with good first issues. While exploring the repository I noticed this project listed among the pinned issues. I wanted to step out of my comfort zone and take on something relatively more challenging and important for the organization.
+I started contributing in with *good first issues*. While exploring the repository I noticed this project listed among the pinned issues. I wanted to step out of my comfort zone and take on something relatively more challenging and important for the organization.
 Initially, I was not very familiar with BLAS, but as I stareted exploring the issue and reading more about it, I realised its importance. From machine learning algorithms to high performance computing, BLAS plays a fundamental role in many numerical and scientific applications, which fascinated me.
 
 This project provides a great opportunity for me to contribute meaningfully, as it aligns well with my interests and skills. The fact that it has been rigorously worked upon for the past two years makes me more sincere about my contribution to the community. I hope to carry forward the same level of dedication shown by contributors in previous years and help advance the project.
