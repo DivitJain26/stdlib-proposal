@@ -197,35 +197,72 @@ I will also actively participate in reviewing open PRs from GSoC 2025 and PRs ma
 I'll gladly continue working on the project even after the GSoC period, addressing review feedback, implementing remaining routines, and ensuring the work I deliver is of the highest quality this project deserves.
 
 ### Schedule*
+
+For a detailed week-by-week breakdown of the implementation schedule, please refer to the
+[BLAS Roadmap](https://docs.google.com/document/d/1JBECQFVKnWh-VMZTqNg0VrIbQrIn1981eHq77NMSnfE/edit?usp=sharing)
+
 Assuming a 12 week schedule,
 
 - **Community Bonding Period**:
 
+	I will use the community bonding periods for more than just introductions, it will serve as an active preparation phase for the coding period.
+	- I will rule out the routines which need additional research and gather resources to come up with an implementation and tests with full coverage.
+	- As I have already contributed to level 2 `JavaScript` implementation I will use this time period to make myself familiar with `C` implementation and level 3 routines.
+	- Develop the core logic to those routines which are fundamental to multiple implementations (eg. `cgemv` and `zgemv` share an identical core logic), this will ensure I meet my deadlines.
+	- Lastly I'll interact with the community and the maintainers, understanding their expectations for the project and getting my queries cleared, this will include setting deadlines for progress, any changes in the implementations and any other nuances for complex valued routines.
+
 - **Week 1**:
+
+	Starting Phase 1 Focusing on Level 2 Complex valued `JavaScript` implementations. 
+	This week I will work on Level 2 Complex Double `JavaScript` implementations, adding core logic and tests for full coverage.
 
 - **Week 2**:
 
+	Continue with Phase 1 with begin Complex Single `JavaScript` implementations.
+
 - **Week 3**:
+
+	Starting Phase 2 targeting Level 3 Complex Valued `JavaScript` implementations, this week will be utilized for implementing Level 3 Complex Double routines.
 
 - **Week 4**:
 
+	Continue Phase 2 with beginning Level 3 Complex Single `JavaScript` implementations.
+
 - **Week 5**:
 
+	Complete any carry-over implementations from Phase 1 and Phase 2.
+
 - **Week 6**: (midterm)
+	
+	Begin adding benchmarks, documentation and usage examples for all completed routines in preparation for the midterm evaluation.
 
 - **Week 7**:
 
+	Begin Phase 3 with Level 2 `C` implementations for real-valued routines.
+
 - **Week 8**:
+
+	Continue phase 3 with begin Complex Double `C` implementations.
 
 - **Week 9**:
 
+	Continue phase 3 with begin Complex Single `C` implementations.
+
 - **Week 10**:
+
+	Begin phase 4 with level 3 `C` implementation for real valued routines.
 
 - **Week 11**:
 
+	Continue phase 4 with level 3 `C` implementation for complex valued routines.
+
 - **Week 12**:
 
+	Finalize documentation, benchmarks and examples for all phases.
+
 - **Final Week**:
+
+	Complete any remaining carry-over work, perform a final review of all submitted PRs ensuring they meet the project’s standards, and write the final project report summarizing contributions, challenges encountered, and future work.
 
 ### Related issues
 [[RFC]: Add BLAS bindings and implementations for linear algebra (tracking issue) #2039](https://github.com/stdlib-js/stdlib/issues/2039)
