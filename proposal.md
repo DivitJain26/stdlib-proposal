@@ -20,6 +20,14 @@ Bachelor of Technology in Computer Science and Engineering
 2027
 
 ### Short biography*
+I am [Divit Jain](https://divit-jain.vercel.app/), a third year undergraduate student at MIT-ADT University, India, pursuing a Bachelor's of Technology in Computer Science and Engineering. My keen interest in Mathematics and Data Structures & Algorithms naturally drew me toward contributing to numerical libraries.
+
+Previously I have interned as a backend developer at [uPivotal](https://drive.google.com/file/d/1vtgZD9Swp9V-1CucD7qNC_eY2oRv2xVk/view?usp=drive_link) as part of foreign university collaboration, where I developed an authentication system using cookies and JWT for a healthcare application.
+
+My technical skill set includes JavaScript, TypeScript, C/C++, Python, and Java. I am proficient in the MERN stack and Next.js for full-stack development, and experienced with Python ML libraries, and have exposure to DevOps including Docker, deployment and cloud infrastructure and services.
+
+I am always excited to learn new technologies and challenge myself to build solutions that target real pain points.
+
 
 ### Timezone*
 Indian Standard Time ( IST ), UTC+5:30
