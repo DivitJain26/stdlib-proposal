@@ -174,7 +174,7 @@ This project has been carried forward for the past two years, and several routin
 
 ### Why this project?
 
-I started contributing in with *good first issues*. While exploring the repository I noticed this project listed among the pinned issues. I wanted to step out of my comfort zone and take on something relatively more challenging and important for the organization.
+I started contributing in with *"good first issue"*. While exploring the repository I noticed this project listed among the pinned issues. I wanted to step out of my comfort zone and take on something relatively more challenging and important for the organization.
 Initially, I was not very familiar with BLAS, but as I kept exploring the issue and reading about it more, I realised its importance. From machine learning algorithms to high performance computing, BLAS plays a fundamental role in many numerical and scientific applications, which fascinated me.
 
 This project provides a great opportunity for me to contribute meaningfully, as it aligns well with my interests and skills. The fact that it has been rigorously worked upon for the past two years makes me more sincere about my contribution to the community. I hope to carry forward the same level of dedication shown by contributors in previous years and help advance the project.
@@ -182,10 +182,10 @@ Being a science student, working with matrices and vectors felt natural to me. E
 
 ### Qualifications
 
-I am well prepared to contribute to and help lead this project, as I already have meaningful contributions in `blas/base/cgemv` and `blas/base/cgbmv` and along the way I have developed a deep understanding of the BLAS kernels, testing strategies, documentation, and common practices expected by `stdlib`. 
+I am well competent to contribute and help lead this project, as I already have meaningful contributions in [`cgemv`](stdlib-js/stdlib#10485), [`cgbmv`](stdlib-js/stdlib#10492) and [`chemv`](stdlib-js/stdlib#10914). Through this work, I have developed familiarity with various matrix types, including banded, triangular, and Hermitian, as well as experience with complex-valued routines, forming a strong foundation for complex double and BLAS Level 3 routines. Moreover along the way I have developed a deep understanding of the BLAS kernels, testing strategies, documentation, and other common practices expected by `stdlib`.
 
-While working on complex-valued BLAS Level 2 routines, I gained exposure to related routines, including real-valued routines and the broader structure of Level 3 operations. 
-I find it worth mentioning that in the process of studying band matrix routines I noticed that some open PRs from the previous year’s GSOC had some inconsistency in packing band matrices compared to BLAS MKL, and I improved it in my implementation to ensure it aligns with the official documentation.
+I find it worth mentioning that in the process of studying band matrix routines I noticed that some open PRs ([`sgbmv`](https://github.com/stdlib-js/stdlib/pull/5928) and [`dgbmv`](https://github.com/stdlib-js/stdlib/pull/6121)) from the previous year’s GSOC had some inconsistency in packing band matrices compared to BLAS MKL, I highlighted these issues in my review comments and addressed it in my implementation of `cgbmv` to ensure it aligns with the official documentation.
+Additionally, I implemented the logic for `chemv`, correctly handling accumulation in the output vector while accounting for conjugate symmetry, given that only one triangular part of the Hermitian matrix is stored. This was done without any prior reference implementation.
 
 My academic background supports this project as well. I have qualified a nationwide examination called [Design and Analysis of Algorithms by NPTEL](https://github.com/user-attachments/files/26008010/NPTEL25CS90S34540007909204048.pdf) through which I have developed a strong foundation of core algorithms and data structures, and it aids me to analyse complexity of an algorithm and come up with optimization techniques.
 
