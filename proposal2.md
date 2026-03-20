@@ -145,8 +145,12 @@ Yes
 - stdlib-js/stdlib#9241
 
 ### Others
+- stdlib-js/stdlib#11063
 - stdlib-js/stdlib#9320
 - stdlib-js/stdlib#9345
+
+## Issues
+- stdlib-js/stdlib#10863
 
 ## Code Reviews
 - [Row-major band matrix packing inconsistency in `dgbmv`](https://github.com/stdlib-js/stdlib/pull/6121#discussion_r2918859963)
