@@ -114,13 +114,17 @@ Yes
 
 ## PRs
 ### BLAS Routines
+- stdlib-js/stdlib#10485
+    - Added `JavaScript` implementation for `cgemv`.
+    - Added tests for the conjugate transpose, which was missing in other open PRs of complex valued routines.
+
 - stdlib-js/stdlib#10492
-    - Added JS implementations of `cgbmv`.
+    - Added `JavaScript` implementation for `cgbmv`.
     - Implemented band matrix packing aligening with MKL storage format, which was missing in open PRs of `sgbmv` and `dgbmv`.
 
-- stdlib-js/stdlib#10485
-    - Added JS implementations `cgemv`.
-    - Added tests for the conjugate transpose, which was missing in other open PRs of complex valued routines.
+- stdlib-js/stdlib#10914
+    - Added `JavaScript` implementation for `chemv`.
+    - Handling triangular storage for Hermitian matrices and ensuring correct treatment of diagonal elements and conjugate symmetry for off-diagonal elements.
 
 ### Use string interpolation in JavaScript benchmarks
 - stdlib-js/stdlib#9053
