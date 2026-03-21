@@ -20,7 +20,7 @@ Bachelor's of Technology in Computer Science and Engineering
 
 ### Short biography
 
-I am [Divit Jain](https://divit-jain.vercel.app/), a third year undergraduate student at MIT-ADT University, India, pursuing a Bachelor's of Technology in Computer Science and Engineering. My keen interest in Mathematics and Data Structures & Algorithms naturally drew me toward contributing to numerical libraries.
+I am [Divit Jain](https://divit-jain.vercel.app/), a third year undergraduate student at MIT-ADT University, India, pursuing Bachelor's of Technology in Computer Science and Engineering. My keen interest in Mathematics and Data Structures & Algorithms naturally drew me toward contributing to numerical libraries.
 
 Previously I have interned as a backend developer at [uPivotal](https://github.com/user-attachments/files/26007949/Certificate.Of.Internship.pdf) as part of foreign university collaboration, where I developed an authentication system using cookies and JWT for a healthcare application.
 
@@ -53,7 +53,7 @@ Pursuing computer science marked my programming journey. I started with the basi
 I wanted to know what happens when you click a button, how the request travels and gets fulfilled, which drove me to explore backend development.
 I picked `Node.js` and `Express.js` where I dug into concepts like RESTful API, microservices architecture, and database management. I also have experience with `C` and `C++` which taught me a lot about low level programming. 
 
-With the rapid rise of Artificial Intelligence, I expanded into `Python` and the mathematics behind Machine Learning, currently I am interested in built application to target real world problem that can be solved with AI.
+With the rapid rise of Artificial Intelligence, I expanded into `Python` and the mathematics behind Machine Learning, currently I am interested in building applications to target real world problems that can be solved with AI.
 
 ### Projects:
 - **VAK:** Demo of real time comment moderation for social meda, uses an SVM for toxic comment detection. Built with `Next.js`
