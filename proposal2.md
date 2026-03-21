@@ -283,10 +283,9 @@ Assuming a 12 week schedule,
 	I will complete any remaining carry-over work, perform a final review of all submitted PRs ensuring they meet the project’s standards, and write the final project report summarizing contributions, challenges encountered, and future work.
 
 ### Related issues
-
-[[RFC]: Add BLAS bindings and implementations for linear algebra (tracking issue) #2039](https://github.com/stdlib-js/stdlib/issues/2039)
-
-[[Idea]: add BLAS bindings and implementations for linear algebra #36](https://github.com/stdlib-js/google-summer-of-code/issues/36)
+ 
+- stdlib-js/stdlib#2039
+- stdlib-js/google-summer-of-code#36
 
 ### Checklist
 
