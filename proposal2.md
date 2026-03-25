@@ -216,12 +216,13 @@ Within `stdlib` this project has been carried forward by [Aman Bhansali](https:/
 
 ### Commitment
 
-I will make this project my first priority, I am willing to dedicate 30 to 40 hours a week, committing to the large 350 hour engagement this project requires. 
+I will make this project my first priority, I am willing to dedicate 30 to 40 hours a week, committing to the large 350 hour engagement this project requires.
 
 I am not currently committed to any other full-time or part-time position, and I will be able to contribute consistently despite my academic responsibilities. I will also have a summer break of approximately one month, during which I can work extended hours to push significant progress on the project.
 
-I commit to implementing the majority of complex valued level 2 and level 3 BLAS routines, each accompanied by thorough testing, benchmarks, and documentation meeting stdlib's standards.
-I will also actively participate in reviewing open PRs from GSoC 2025 and PRs made this year by fellow contributors.
+I commit to implementing level 2 real-valued `C` and level 2 complex-valued `JavaScript` routines, then I will complete the majority of level 3 real-valued `C` routines, each accompanied by thorough testing, benchmarks, and documentation meeting stdlib's standards.
+
+I will also actively participate in reviewing open PRs from GSoC 2025 and PRs made this year by fellow contributors. I will compare the correctness of the routines against `SciPy`. Moreover, I will ensure the fixture provides full test coverage and each routine has documentations, examples, and benchmarks as per the standard.
 
 I'll gladly continue working on the project even after the GSoC period, addressing review feedback, implementing remaining routines, and ensuring the work I deliver is of the highest quality this project deserves.
 
