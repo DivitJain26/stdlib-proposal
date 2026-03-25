@@ -55,7 +55,7 @@ I picked `Node.js` and `Express.js` where I dug into concepts like RESTful API, 
 
 With the rapid rise of Artificial Intelligence, I expanded into `Python` and the mathematics behind Machine Learning, currently I am interested in building applications to target real world problems that can be solved with AI.
 
-### Projects:
+#### Projects:
 - **VAK:** Demo of real time comment moderation for social meda, uses an SVM for toxic comment detection. Built with `Next.js`
 
 	[[GitHub]](https://github.com/DivitJain26/vak)
@@ -174,11 +174,15 @@ This project uses `stdlib` numerical and BLAS utilities including `uniform`, `da
 
 ### Goals
 
-This project has been carried forward for the past two years, and several routines have already been implemented (many of them currently have open PRs). The remaining routines are in Level 2 and Level 3 and are mostly complex-valued.
+This project has been carried forward for the past two years, and several routines have already been implemented (many of them currently have open PRs). The remaining routines are in Level 2 and Level 3, which consists of real-valued `C` implementations and complex-valued `JavaScript` implementations in both level 2 and level 3.
 
-- As discussed with Athan, the top priority is to complete the implementation of real-valued routines. Since most real-valued routines already have `JavaScript` implementations, I will focus on implementing their corresponding `C` versions.
+- As discussed with Athan, the top priority is to complete real-valued routines. Since most real-valued routines already have `JavaScript` implementations, I will focus on implementing their corresponding `C` versions.
 
-- The second priority is complex-valued routines. I will implement both `JavaScript` and `C implementations of those routines.
+- The second priority is complex-valued routines. I will complete `JavaScript` implementations of level 2 complex-valued routines.
+
+- Next I will focus on `C` implementations of level 3 real-valued routines.
+
+- Finally, I will review open PRs from GSoC 2025, verifying correctness and addressing any issues where necessary.
 
 `Fortran` and `WebAssembly` implementations are currently a lower priority. The `Fortran` implementations are blocked, and the `WebAssembly` API is relatively complex for general users.
 
@@ -192,7 +196,7 @@ Being a science student, working with matrices and vectors felt natural to me. E
 
 ### Qualifications
 
-I am well competent to contribute and help lead this project, as I already have meaningful contributions in [`cgemv`](stdlib-js/stdlib#10485), [`cgbmv`](stdlib-js/stdlib#10492) and [`chemv`](stdlib-js/stdlib#10914). Through this work, I have developed familiarity with various matrix types, including banded, triangular, and Hermitian, as well as experience with complex-valued routines, forming a strong foundation for complex double and BLAS Level 3 routines. Moreover along the way I have developed a deep understanding of the BLAS kernels, testing strategies, documentation, and other common practices expected by `stdlib`.
+I am well competent to contribute and help lead this project, as I already have meaningful contributions in [`cgemv`](https://github.com/stdlib-js/stdlib/pull/10485), [`cgbmv`](https://github.com/stdlib-js/stdlib/pull/10492), [`chemv`](https://github.com/stdlib-js/stdlib/pull/10914) and [`chbmv`](https://github.com/stdlib-js/stdlib/pull/11072). Through this work, I have developed familiarity with various matrix types, including banded, triangular, and Hermitian, as well as experience with complex-valued routines, forming a strong foundation for complex double and BLAS Level 3 routines. Moreover along the way I have developed a deep understanding of the BLAS kernels, testing strategies, documentation, and other common practices expected by `stdlib`.
 
 I find it worth mentioning that in the process of studying band matrix routines I noticed that some open PRs ([`sgbmv`](https://github.com/stdlib-js/stdlib/pull/5928) and [`dgbmv`](https://github.com/stdlib-js/stdlib/pull/6121)) from the previous year’s GSOC had some inconsistency in packing band matrices compared to BLAS MKL, I highlighted these issues in my review comments and addressed it in my implementation of `cgbmv` to ensure it aligns with the official documentation.
 Additionally, I implemented the logic for `chemv`, correctly handling accumulation in the output vector while accounting for conjugate symmetry, given that only one triangular part of the Hermitian matrix is stored. This was done without any prior reference implementation.
