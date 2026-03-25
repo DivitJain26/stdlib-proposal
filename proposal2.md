@@ -106,14 +106,15 @@ Yes
 
 ### Contributions to stdlib
 
-[Open PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Aopen%20is%3Apr%20author%3ADivitJain26)
+#### **Pull Requests**
+---
+Complete list of Pull Requests:
+- [Open PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Aopen%20is%3Apr%20author%3ADivitJain26)
+- [Merged PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Amerged%20is%3Apr%20author%3ADivitJain26)
 
-[Merged PRs](https://github.com/stdlib-js/stdlib/issues?q=state%3Amerged%20is%3Apr%20author%3ADivitJain26)
+This Includes
 
-**This Includes**
-
-## PRs
-### BLAS Routines
+**BLAS Routines**
 - stdlib-js/stdlib#10485
     - Added `JavaScript` implementation for `cgemv`.
     - Added tests for the conjugate transpose, which was missing in other open PRs of complex valued routines.
@@ -129,7 +130,7 @@ Yes
 - stdlib-js/stdlib#11072
     - Added `JavaScript` implementation for `chbmv`.
    
-### Use string interpolation in JavaScript benchmarks
+**Use string interpolation in JavaScript benchmarks**
 - stdlib-js/stdlib#9053
 - stdlib-js/stdlib#9051
 - stdlib-js/stdlib#9050
@@ -137,25 +138,27 @@ Yes
 - stdlib-js/stdlib#9048
 - stdlib-js/stdlib#9026
 
-### Fix JavaScript lint errors
+**Fix JavaScript lint errors**
 - stdlib-js/stdlib#9546
 - stdlib-js/stdlib#9409
 - stdlib-js/stdlib#9334
 
-### Address commit comments for commit
+**Address commit comments for commit**
 - stdlib-js/stdlib#9294
 - stdlib-js/stdlib#9236
 - stdlib-js/stdlib#9241
 
-### Others
+**Others**
 - stdlib-js/stdlib#11063
 - stdlib-js/stdlib#9320
 - stdlib-js/stdlib#9345
 
-## Issues
+#### **Issues**
+---
 - stdlib-js/stdlib#10863
 
-## Code Reviews
+#### **Code Reviews**
+---
 - [Row-major band matrix packing inconsistency in `dgbmv`](https://github.com/stdlib-js/stdlib/pull/6121#discussion_r2918859963)
 - [Row-major band matrix packing inconsistency in `sgbmv`](https://github.com/stdlib-js/stdlib/pull/5928#discussion_r2925124089)
 - [Column-major band matrix packing inconsistency in `sgbmv`](https://github.com/stdlib-js/stdlib/pull/5928#discussion_r2925149237)
