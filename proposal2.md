@@ -188,7 +188,7 @@ This project has been carried forward for the past two years, and several routin
 
 ### Why this project?
 
-I started contributing in with *"good first issue"*. While exploring the repository I noticed this project listed among the pinned issues. I wanted to step out of my comfort zone and take on something relatively more challenging and important for the organization.
+I started contributing to `stdlib` with *"good first issue"*. While exploring the repository I noticed this project listed among the pinned issues. I wanted to step out of my comfort zone and take on something relatively more challenging and important for the organization.
 Initially, I was not very familiar with BLAS, but as I kept exploring the issue and reading about it more, I realised its importance. From machine learning algorithms to high performance computing, BLAS plays a fundamental role in many numerical and scientific applications, which fascinated me.
 
 This project provides a great opportunity for me to contribute meaningfully, as it aligns well with my interests and skills. The fact that it has been rigorously worked upon for the past two years makes me more sincere about my contribution to the community. I hope to carry forward the same level of dedication shown by contributors in previous years and help advance the project.
@@ -208,9 +208,9 @@ In addition, I regularly practice data structures and algorithms on [LeetCode](h
 ### Prior art
 
 The earliest implementation of BLAS can be traced back to 1979, [LINPACK](https://en.wikipedia.org/wiki/LINPACK) and [EISPACK](https://en.wikipedia.org/wiki/EISPACK) were the earliest numerical libraries to provide Fortran based BLAS functionality. Later, [LAPACK](https://www.netlib.org/lapack/explore-html/) became widely adopted due to its better support for modern hardware architectures.
-Over time, the focus of numerical computing shifted toward performance optimization. Libraries such as [Intel one API Math Kernel Library (oneMKL)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html), [OpenBLAS](https://github.com/OpenMathLib/OpenBLAS), and [cuBLAS](https://developer.nvidia.com/cublas) emerged to provide highly optimized BLAS implementations for different hardware platforms. Personally for me [Intel one API Math Kernel Library (oneMKL)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html) and [LAPACK](https://www.netlib.org/lapack/explore-html/) has been my Bible for BLAS, I have frequently used them as guides for routine definitions, input parameters, and expected results for my contributions till now.
+Over time, the focus of numerical computing shifted toward performance optimization. Libraries such as [Intel one API Math Kernel Library (oneMKL)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html), [OpenBLAS](https://github.com/OpenMathLib/OpenBLAS), and [cuBLAS](https://developer.nvidia.com/cublas) emerged to provide highly optimized BLAS implementations for different hardware platforms. Personally for me oneMKL and LAPACK have been my Bible for BLAS, I have frequently used them as guides for routine definitions, input parameters, and expected results for my contributions till now.
 
-Python libraries like [NumPy](https://numpy.org/devdocs/building/blas_lapack.html) and [SciPy](https://docs.scipy.org/doc/scipy/reference/linalg.blas.html) provide BLAS wrappers which use foundational libraries like LAPACK and OpenBLAS under the hood.
+Python libraries like [`NumPy`](https://numpy.org/devdocs/building/blas_lapack.html) and [`SciPy`](https://docs.scipy.org/doc/scipy/reference/linalg.blas.html) provide BLAS wrappers which use foundational libraries like LAPACK and OpenBLAS under the hood.
 
 Within `stdlib` this project has been carried forward by [Aman Bhansali](https://github.com/aman-095) and [Shabareesh Shetty](https://github.com/ShabiShett07), their contributions have been an immense help for me to deepen my understanding of this project and to contribute to it meaningfully.
 
@@ -222,7 +222,7 @@ I am not currently committed to any other full-time or part-time position, and I
 
 I commit to implementing level 2 real-valued `C` and level 2 complex-valued `JavaScript` routines, then I will complete the majority of level 3 real-valued `C` routines, each accompanied by thorough testing, benchmarks, and documentation meeting stdlib's standards.
 
-I will also actively participate in reviewing open PRs from GSoC 2025 and PRs made this year by fellow contributors. I will compare the correctness of the routines against `SciPy`. Moreover, I will ensure the fixture provides full test coverage and each routine has documentations, examples, and benchmarks as per the standard.
+I will also actively participate in reviewing open PRs from GSoC 2025 and PRs made this year by fellow contributors. I will compare the correctness of the routines against `SciPy`. Moreover, I will ensure the fixtures provide full test coverage and each routine has documentations, examples, and benchmarks as per the standard.
 
 I'll gladly continue working on the project even after the GSoC period, addressing review feedback, implementing remaining routines, and ensuring the work I deliver is of the highest quality this project deserves.
 
@@ -354,24 +354,32 @@ I will use the community bonding periods for more than just introductions, it wi
 
 - **Week 11**:
 
-	I will start working on Level 3 Complex Double `JavaScript` routines.
-	- `ZGEMM`
-	- `ZSYMM`
-	- `ZHEMM`
-	- `ZSYRK`
-	- `ZHERK`
+	I will start working on Level 2 Complex Double `C` routines.
+	- `ZGEMV`
+	- `ZGBMV`
+	- `ZHEMV`
+	- `ZHBMV`
+	- `ZHPMV`
+	- `ZTRMV`
+	- `ZTBMV`
+	- `ZTPMV`
+	- `ZTRSV`
 
 - **Week 12**:
 
-	I will continue working on Level 3 Complex Double `JavaScript` routines and give a final check to documentation, benchmarks and examples for all routines.
-	- `ZSYR2K`
-	- `ZHER2K`
-	- `ZTRMM`
-	- `ZTRSM`
+	I will continue working on Level 2 Complex Double `C` routines and give a final check to documentation, benchmarks and examples for all routines.
+	- `ZTBSV`
+	- `ZTPSV`
+	- `ZGERU`
+	- `ZGERC`
+	- `ZHER`
+	- `ZHPR`
+	- `ZHER2`
+	- `ZHPR2`
 
 - **Final Week**:
 
-	I will complete any remaining carry-over work, perform a final review of all submitted PRs ensuring they meet the project’s standards, and write the final project report summarizing contributions, challenges encountered, and future work.
+	I will ensure all PRs are in a mergeable state, addressing any outstanding review feedback and verifying that each submission meets the project's standards. This includes running final checks on documentation, tests, and benchmarks across all implemented routines. I will also write the final GSoC project report.
 
 ### Related issues
  
