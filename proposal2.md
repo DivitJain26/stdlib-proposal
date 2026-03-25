@@ -176,13 +176,13 @@ This project uses `stdlib` numerical and BLAS utilities including `uniform`, `da
 
 This project has been carried forward for the past two years, and several routines have already been implemented (many of them currently have open PRs). The remaining routines are in Level 2 and Level 3, which consists of real-valued `C` implementations and complex-valued `JavaScript` implementations in both level 2 and level 3.
 
+- I will review open PRs from GSoC 2025 (`JavaScript` implementations), verifying their correctness, addressing any issues, and working toward getting them merged to ensure they are ready for their corresponding `C` implementations.
+
 - As discussed with Athan, the top priority is to complete real-valued routines. Since most real-valued routines already have `JavaScript` implementations, I will focus on implementing their corresponding `C` versions.
 
 - The second priority is complex-valued routines. I will complete `JavaScript` implementations of level 2 complex-valued routines.
 
 - Next I will focus on `C` implementations of level 3 real-valued routines.
-
-- Finally, I will review open PRs from GSoC 2025, verifying correctness and addressing any issues where necessary.
 
 `Fortran` and `WebAssembly` implementations are currently a lower priority. The `Fortran` implementations are blocked, and the `WebAssembly` API is relatively complex for general users.
 
@@ -228,66 +228,146 @@ I'll gladly continue working on the project even after the GSoC period, addressi
 
 ### Schedule
 
-For a detailed week-by-week breakdown of the implementation schedule, please refer to the [BLAS Roadmap](https://github.com/user-attachments/files/26008029/BLAS.Roadmap.pdf)
+**BLAS Progress Tracker**
+| | | Total Routines | Implemented JS | Implemented C | Open PRs JS | Open PRs C | Unimplemented JS | Unimplemented C |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Level 2** | Single Precision | 16 | 9 | 5 | 6 | 5 | 1 | 6 |
+| | Double Precision | 16 | 9 | 4 | 7 | 3 | - | 9 |
+| | Complex Single | 17 | - | - | 3 | - | 14 | 17 |
+| | Complex Double | 17 | - | - | 2 | - | 15 | 17 |
+| | **Total** | **66** | **18** | **9** | **18** | **8** | **30** | **49** |
+| **Level 3** | Single Precision | 6 | 1 | - | 5 | - | - | 6 |
+| | Double Precision | 6 | 1 | - | 5 | - | - | 6 |
+| | Complex Single | 9 | - | - | - | - | 9 | 9 |
+| | Complex Double | 9 | - | - | - | - | 9 | 9 |
+| | **Total** | **30** | **2** | **-** | **10** | **-** | **18** | **30** |
+| **Total** | | **96** | **20** | **9** | **28** | **8** | **48** | **79** |
+
+For a detailed overview of unimplemented routines and their current status, please refer to the [BLAS Tracker.pdf](https://github.com/user-attachments/files/26233814/BLAS.Tracker.pdf)
 
 Assuming a 12 week schedule,
 
 - **Community Bonding Period**:
 
-	I will use the community bonding periods for more than just introductions, it will serve as an active preparation phase for the coding period.
+I will use the community bonding periods for more than just introductions, it will serve as an active preparation phase for the coding period.
 	- I will rule out the routines which need additional research and gather resources to come up with an implementation and tests with full coverage.
+	- I will review the Level 2 and Level 3 real-valued routines to get them over the finish line to ensure readiness for their corresponding `C` implementations.
 	- As I have already contributed to level 2 `JavaScript` implementation I will use this time period to make myself familiar with `C` implementation and level 3 routines.
 	- Develop the core logic to those routines which are fundamental to multiple implementations (eg. `cgemv` and `zgemv` share an identical core logic), this will ensure I meet my deadlines.
 	- Lastly I'll interact with the community and the maintainers, understanding their expectations for the project and getting my queries cleared, this will include setting deadlines for progress, any changes in the implementations and any other nuances for complex valued routines.
 
 - **Week 1**:
 
-	I will start with Phase 1, focusing on Level 2 complex-valued `JavaScript` implementations.This week, I will work on Level 2 Complex Double `JavaScript` implementations, adding core logic and tests for full coverage.
+	I will start with Level 2 Double Precision `C` routines. Including
+	- `DGBMV`
+	- `DSYMV`
+	- `DSBMV`
+	- `DSPMV`
+	- `DTBMV`
 
 - **Week 2**:
 
-	From 2nd week onwards, I will continue with Phase 1 beginning with Complex Single `JavaScript` implementations
+	I will continue with Level 2 Double Precision `C` routines.
+	- `DTPMV`
+	- `DTBSV`
+	- `DTPSV`
+	- `DSPR2`
 
 - **Week 3**:
 
-	Starting with Phase 2 in this week, I will target Level 3 Complex Valued `JavaScript` implementations. I will dedicate this week for implementing Level 3 Complex Double routines.
+	This week I will start implementing Level 2 Single Precision `C` routines.
+	- `SGBMV`
+	- `SSBMV`
+	- `STBMV`
+	- `STPMV`
+	- `STBSV`
+	- `STPSV`
 
 - **Week 4**:
 
-	I will continue with Phase 2, beginning with Level 3 Complex Single `JavaScript` implementations.
+	I will begin with Level 2 Complex Double `JavaScript` implementations. Including:
+	- `ZGEMV`
+	- `ZGBMV`
+	- `ZHEMV`
+	- `ZHBMV`
+	- `ZHPMV`
 
 - **Week 5**:
 
-	I will aim to complete any carry-over implementations from Phase 1 and Phase 2, keeping in mind the incorporation of reviews.
+	I will continue working on remaining Level 2 Complex Double `JavaScript` implementations.
+	- `ZTRMV`
+	- `ZTBMV`
+	- `ZTPMV`
+	- `ZTRSV`
+	- `ZTBSV`
 
 - **Week 6**: (midterm)
 	
-	I will now take up the task of adding benchmarks, documentation and usage examples for all completed routines in preparation for the midterm evaluation.
+	This week I will complete Level 2 Complex Double `JavaScript` implementations.
+	- `ZTPSV`
+	- `ZGERU`
+	- `ZGERC`
+	- `ZHPR`
+	- `ZHPR2`
 
 - **Week 7**:
 
-	From 7th week, I will start with Phase 3 with Level 2 `C` implementations for real-valued routines.
+	I will now take up the task of adding Level 2 Complex Single `JavaScript` implementations.
+	- `CGEMV`
+	- `CGBMV`
+	- `CHEMV`
+	- `CHBMV`
+	- `CHPMV`
+	- `CTBMV`
+	- `CTPMV`
+	- `CTRSV`
+	- `CTBSV`
+	- `CTPSV`
+	- `CGERU`
+	- `CGERC`
+	- `CHPR`
+	- `CHPR2`
 
 - **Week 8**:
 
-	I will continue with Phase 3 beginning with Complex Double `C` implementations.
+	I will finish reviewing open PRs for Level 3 Double Precision `JavaScript` routines and start working on `C` counterparts.
+	- `DGEMM`
+	- `DSYMM`
+	- `DSYRK`
 
 - **Week 9**:
 
-	I will devote this week to Phase 3 beginning with Complex Single `C` implementations.
-
+	I will continue working on Level 3 Double Precision `C` routines.
+	- `DSYR2K`
+	- `DTRMM`
+	- `DTRSM`
 
 - **Week 10**:
 
-	I will take up Phase 4, with level 3 `C` implementation for real-valued routines.
+	I will complete Level 3 Single Precision `C` routines
+	- `SGEMM`
+	- `SSYMM`
+	- `SSYRK`
+	- `SSYR2K`
+	- `STRMM`
+	- `STRSM`
 
 - **Week 11**:
 
-	I will continue with Phase 4 with level 3 `C` implementation for complex valued routines.
+	I will start working on Level 3 Complex Double `JavaScript` routines.
+	- `ZGEMM`
+	- `ZSYMM`
+	- `ZHEMM`
+	- `ZSYRK`
+	- `ZHERK`
 
 - **Week 12**:
 
-	I will work on documentation, benchmarks and examples for all phases, as we near the finalisation process.
+	I will continue working on Level 3 Complex Double `JavaScript` routines and give a final check to documentation, benchmarks and examples for all routines.
+	- `ZSYR2K`
+	- `ZHER2K`
+	- `ZTRMM`
+	- `ZTRSM`
 
 - **Final Week**:
 
