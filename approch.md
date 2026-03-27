@@ -79,6 +79,8 @@
 
 #### Validating Results Against Reference Implementations
 
+I will validate my implementations against the reference BLAS routines provided by `SciPy` to ensure numerical accuracy.
+
 This example demonstrates validation of the `sgemv` implementation by comparing results against the reference implementation provided by `SciPy`.
 
 **`stdlib` implementation**
@@ -119,13 +121,13 @@ print( result )
 [ 5.5 15.  24.5]
 ```
 
-#### **Level 2**
+#### **Level 2 Validation**
 
 **Input Validation**
 
-This table defines all parameter validation rules for Level 2 enforced before computation. These checks ensure correctness, prevent undefined memory access.
+This table defines all parameter validation rules for Level 2 enforced before computation. These checks ensure correctness, and prevent undefined memory access.
 
-| Parameter          | Condition                                                  | Error Type   | Description                            |
+| Parameter          | Constraints                                                | Error Type   | Description                            |
 |--------------------|------------------------------------------------------------|--------------|----------------------------------------|
 | order              | valid layout (`row-major`/`column-major`)                  | TypeError    | Ensures correct memory interpretation  |
 | uplo               | `upper` or `lower`                                         | TypeError    | Ensures correct triangular access      |
@@ -133,18 +135,20 @@ This table defines all parameter validation rules for Level 2 enforced before co
 | M, N               | ≥ 0                                                        | RangeError   | Matrix dimensions must be non-negative |
 | LDA                | ≥ max(1, M) or max(1, N) depending on layout               | RangeError   | Valid leading dimension                |
 | strideA1, strideA2 | ≠ 0                                                        | RangeError   | Valid matrix traversal                 |
-| strideX,strideY    | ≠ 0                                                        | RangeError   | Valid vector traversal                 |
+| strideX, strideY   | ≠ 0                                                        | RangeError   | Valid vector traversal                 |
 | offsetA            | ≥ 0                                                        | RangeError   | Valid starting index for matrix        |
 | offsetX            | ≥ 0                                                        | RangeError   | Valid starting index for vector `x`    |
 | offsetY            | ≥ 0                                                        | RangeError   | Valid starting index for vector `y`    |
 
-**Testing**
+**Testing Schemes**
 
-1. **General Layout Tests**
+Test fixtures are generated from the parameter combinations below, with fixture names derived from the naming conventions specified in each table.
+
+1. **Transpose Operation Tests**
 
 	Covers all transpose configurations across both memory layouts. 
 
-	> Note: Conjugate transpose is only applicable to compatable complex valued routines.
+	*Note: Conjugate transpose is only applicable to compatible complex valued routines.*
 
 	| Operation Mode      | Row-major Fixtures   | Column-major Fixtures |
 	|---------------------|----------------------|-----------------------|
@@ -154,7 +158,7 @@ This table defines all parameter validation rules for Level 2 enforced before co
 
 ---
 
-2. **General Layout Tests for triangular matrix**
+2. **Triangular Region Tests**
 
 	Validates correct handling of upper and lower triangular matrix regions.
 
@@ -169,18 +173,20 @@ This table defines all parameter validation rules for Level 2 enforced before co
 
 	Tests behavior under  scalar values (`α`, `β`) and vector conditions to ensure correct mathematical handling of degenerate cases.
 
-	| α   | β   | x           | Row-major Fixtures              | Column-major Fixtures              |Result               |
-	|-----|-----|-------------|---------------------------------|------------------------------------|---------------------|
-	| 0   | any | any vector  | `row_major_alpha_zero`          | `column_major_alpha_zero`          | y scaled to β       |
-	| 0   | 1   | any vector  | `row_major_alpha_zero_beta_one` | `column_major_alpha_zero_beta_one` | y remains unchanged |
-	| any | any | zero vector | `row_major_x_zeros`             | `column_major_x_zeros`             | y scaled to β       |
-	| any | 1   | zero vector | `row_major_x_zeros_beta_one`    | `column_major_x_zeros_beta_one`    | y remains unchanged |
+	| `α` | `β` | `x`         | Row-major Fixtures              | Column-major Fixtures              | Result                |
+	|-----|-----|-------------|---------------------------------|------------------------------------|-----------------------|
+	| 0   | any | any vector  | `row_major_alpha_zero`          | `column_major_alpha_zero`          | `y` scaled to `β`     |
+	| 0   | 1   | any vector  | `row_major_alpha_zero_beta_one` | `column_major_alpha_zero_beta_one` | `y` remains unchanged |
+	| any | any | zero vector | `row_major_x_zeros`             | `column_major_x_zeros`             | `y` scaled to `β`     |
+	| any | 1   | zero vector | `row_major_x_zeros_beta_one`    | `column_major_x_zeros_beta_one`    | `y` remains unchanged |
 
 ---
 
-4. **Vector Stride Handling Tests**
+4. **Vector Stride Direction Tests**
 
 	Ensures correctness when traversing vectors with different stride directions.
+
+	*Note: Fixtures with negative strides also validate non-zero vector offsets (`offsetX`, `offsetY`), ensuring correct base address adjustment during reverse traversal.*
 
 	| strideX  | strideY  | Row-major Fixtures   | Column-major Fixtures |
 	|----------|----------|----------------------|-----------------------|
@@ -191,7 +197,7 @@ This table defines all parameter validation rules for Level 2 enforced before co
 
 ---
 
-5. **Offset Handling Tests**
+5. **Matrix Offset Tests**
 
 	Verifies correct behavior when computations begin from non-zero memory offsets.
 
@@ -201,7 +207,7 @@ This table defines all parameter validation rules for Level 2 enforced before co
 
 ---
 
-6. **Matrix Stride Handling Tests**
+6. **Matrix Stride Direction Tests**
 
 	Tests traversal of matrices with varying stride configurations.
 
@@ -231,23 +237,23 @@ This table defines all parameter validation rules for Level 2 enforced before co
 
 Defines validation rules specific to matrix-matrix operations, ensuring dimensional consistency and safe memory access before computation.
 
-| Parameter          |  Condition                                                 | Error Type   | Description                                 |
+| Parameter          |  Constraints                                               | Error Type   | Description                                 |
 |--------------------|------------------------------------------------------------|--------------|---------------------------------------------|
 | transA             | valid (`no-transpose`, `transpose`, `conjugate-transpose`) | TypeError    | Ensures valid operation for matrix A        |
 | transB             | valid (`no-transpose`, `transpose`, `conjugate-transpose`) | TypeError    | Ensures valid operation for matrix B        |
 | M                  | ≥ 0                                                        | RangeError   | Rows of op(A) and C must be non-negative    |
 | N                  | ≥ 0                                                        | RangeError   | Columns of op(B) and C must be non-negative |
 | K                  | ≥ 0                                                        | RangeError   | Shared dimension between A and B            |
-| strideA1, strideA2 | (assumed valid)                                            | —            | Define traversal of matrix A                |
-| strideB1, strideB2 | (assumed valid)                                            | —            | Define traversal of matrix B                |
+| strideA1, strideA2 | ≠ 0                                                        | RangeError   | Define traversal of matrix A                |
+| strideB1, strideB2 | ≠ 0                                                        | RangeError   | Define traversal of matrix B                |
 | strideC1, strideC2 | ≠ 0                                                        | RangeError   | Prevents invalid traversal of matrix C      |
-| offsetA            | ≥ 0 (assumed)                                              | —            | Starting index for matrix A                 |
-| offsetB            | ≥ 0 (assumed)                                              | —            | Starting index for matrix B                 |
-| offsetC            | ≥ 0 (assumed)                                              | —            | Starting index for matrix C                 |
+| offsetA            | ≥ 0                                                        | RangeError   | Starting index for matrix A                 |
+| offsetB            | ≥ 0                                                        | RangeError   | Starting index for matrix B                 |
+| offsetC            | ≥ 0                                                        | RangeError   | Starting index for matrix C                 |
 
 ---
 
-**Testing**
+**Testing Schemes**
 
 The following tables collectively define a combinatorial testing strategy, where all relevant parameter dimensions (layout, operation type, strides, offsets, and triangular configurations) are systematically combined to generate comprehensive test cases.
 
@@ -268,10 +274,11 @@ The following tables collectively define a combinatorial testing strategy, where
 
 ---
 
-2. **Operation Combinations**
+2. **Matrix Transpose Operation Combinations**
 
 	Ensures correctness across all combinations of transpose and conjugate-transpose operations applied to matrices `A` and `B`. 
-	> Note: Conjugate transpose is only applicable to compatable complex valued routines.
+
+	*Note: Conjugate transpose is only applicable to compatible complex valued routines.*
 
 	| Operation A         | Operation B         | Fixtures Suffix |
 	|---------------------|---------------------|-----------------|
@@ -287,7 +294,7 @@ The following tables collectively define a combinatorial testing strategy, where
 
 ---
 
-3. **Side and Triangular Variants**
+3. **Side and Triangle Region Tests**
 
 	Validates triangular matrix operations under different configurations, including left/right application and upper/lower storage.
 
@@ -300,7 +307,22 @@ The following tables collectively define a combinatorial testing strategy, where
 
 ---
 
-4. **Offset Handling**
+4. **Scalar and Matrix Edge Cases**
+
+	Tests behavior under degenerate scalar and dimensional conditions to ensure correct mathematical handling of `α`, `β`, and `K`.
+
+	| `α` | `K` | `β`      | Result                |
+	|-----|-----|----------|-----------------------|
+	| 0   | any | ≠ 0, ≠ 1 | `C` scaled by `β`     |
+	| 0   | any | 0        | `C` filled with zeros |
+	| 0   | any | 1        | `C` remains unchanged |
+	| any | 0   | ≠ 0, ≠ 1 | `C` scaled by `β`     |
+	| any | 0   | 0        | `C` filled with zeros |
+	| any | 0   | 1        | `C` remains unchanged |
+
+---
+
+5. **Matrix Offset Tests**
 
 	Ensures correctness when matrices begin at non-zero offsets.
 
@@ -312,7 +334,7 @@ The following tables collectively define a combinatorial testing strategy, where
 
 ---
 
-5. **Matrix Stride Handling**
+6. **Matrix Stride Direction Tests**
 
 	Validates traversal behavior for each matrix independently under varying stride configurations, including reverse and non-contiguous memory layouts.
 
@@ -345,10 +367,12 @@ The following tables collectively define a combinatorial testing strategy, where
 
 ---
 
-6. **Complex Access Pattern Tests**
+7. **Complex Access Pattern Tests**
 
 Combines strides and offsets across all matrices to simulate realistic, non-contiguous memory access patterns.
 
 | strideA1 | strideA2 | strideB1 | strideB2 | strideC1 | strideC2 | offsetA | offsetB | offsetC | Fixture Suffix           |
 |----------|----------|----------|----------|----------|----------|---------|---------|---------|--------------------------|
 | positive | positive | positive | positive | positive | positive | present | present | present | `complex_access_pattern` |
+
+
