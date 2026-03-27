@@ -1,4 +1,8 @@
-#### `JavaScript` implementation structure
+### Approch
+
+#### `JavaScript` Implementation Structure
+
+Defines the layout of the pure `JavaScript` implementation, including the core logic, ndarray interface, benchmarks, tests, and documentation.
 
 ```bash
 @stdlib/blas/base/chemv
@@ -32,7 +36,9 @@
 └── package.json    # Package configuration
 ```
 
-#### `C` implementation structure
+#### `C` Implementation Structure
+
+Defines the layout of the native `C` implementation, including the core `C` source files, CBLAS-compatible wrappers, `Node.js` addon bindings, headers, and the corresponding `JavaScript` interface layer for native execution.
 
 ```bash
 @stdlib/blas/base/{routine}
